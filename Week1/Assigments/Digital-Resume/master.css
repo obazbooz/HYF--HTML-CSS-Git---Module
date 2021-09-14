@@ -1,0 +1,298 @@
+/********************** Global settings  ******************************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: gray;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/********************** End Of Global Section  ******************************/
+
+/********************** Layout Outlines Divisions  ******************************/
+header {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  min-height: 100px;
+}
+
+.main-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 20px; */
+}
+
+.section {
+  margin: 0.5px;
+  /* border-left: 3px solid #333;
+  border-right: 3px solid #333; */
+}
+
+.left-sec {
+  min-height: 1300px;
+  align-self: center;
+  width: 35%;
+  background: #d1d5de;
+  flex-shrink: 1;
+}
+
+.right-sec {
+  min-height: 1300px;
+  align-self: center;
+  width: 65%;
+  background: #fff;
+  position: relative;
+}
+
+/********************** End Of Layout Outlines Divisions  ******************************/
+
+/********************** Media section  ******************************/
+/* Container width with small display */
+@media (min-width: 768px) {
+  .right-sec,
+  .left-sec {
+    min-height: 1600px;
+  }
+
+  .profile-info h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 800;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-sec,
+  .left-sec {
+    min-height: 1100px;
+  }
+  .profile-info h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+  .profile-info {
+    font-size: 10px;
+  }
+
+  .contact h2,
+  .experties h2,
+  .languages h2,
+  .competencies h2 {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .contact ul,
+  .languages ol,
+  .experties p,
+  .competencies ul,
+  .documents p {
+    padding-left: 30px;
+    font-size: 8px;
+    /* padding-left did not work here IDK WHY!!! */
+    padding-left: 10px;
+  }
+
+  .work-head h2,
+  .edu-head h2 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .work h3,
+  .edu h3 {
+    font-size: 9px;
+    font-weight: 100;
+  }
+
+  .work h4,
+  .edu h4 {
+    font-size: 8px;
+  }
+
+  .work h5,
+  .edu h5 {
+    font-size: 7px;
+  }
+
+  .work p,
+  .edu p {
+    font-size: 8px;
+  }
+}
+
+@media (max-height: 375px) {
+  .right-sec,
+  .left-sec {
+    min-height: 3000px;
+  }
+}
+
+/* Container width with medium display */
+@media (min-width: 992px) {
+  .right-sec,
+  .left-sec {
+    min-height: 1500px;
+  }
+}
+
+/* Container width with large display */
+@media (min-width: 1200px) {
+  .right-sec,
+  .left-sec {
+    min-height: 1400px;
+  }
+}
+
+/**********************End  Of Media section  ******************************/
+
+/********************** Header Section Styling   ******************************/
+
+.osama {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #113a94cc;
+  color: #fff;
+}
+.profile-info {
+  text-align: justify;
+  padding: 10px;
+  flex-grow: 1;
+  order: 1;
+  margin: 10px;
+  padding: 20px;
+}
+.profile-img {
+  width: 200px;
+  flex-shrink: 0;
+  order: 2;
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-info h1 {
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.profile-info p {
+  margin: 20px;
+  line-height: 1.5;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 600;
+}
+
+/********************** End Of Header Section Styling   ******************************/
+
+/**********************  Left Section Styling   ******************************/
+
+.contact,
+.experties,
+.languages,
+.competencies {
+  margin: 80px 20px;
+}
+
+.contact h2,
+.experties h2,
+.languages h2,
+.competencies h2 {
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 400;
+}
+
+.contact ul,
+.languages ol,
+.experties p,
+.competencies ul,
+.documents p {
+  padding-left: 30px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.experties p {
+  text-align: justify;
+}
+
+.documents p {
+  text-decoration: underline;
+  font-size: 15px;
+  color: #0a70459f;
+  margin-top: 175px;
+}
+
+/********************** End Of Left Section Styling   ******************************/
+
+/**********************  Right Section Styling   ******************************/
+
+.work-head,
+.edu-head {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 45px;
+  margin-left: 20px;
+  max-width: 100%;
+  /* background: chartreuse; */
+  position: relative;
+  width: 50%;
+}
+
+.work-head h2,
+.edu-head h2 {
+  margin-left: 10px;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 400;
+}
+
+.work,
+.edu {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.work h4,
+.work h5 {
+  color: #113a94cc;
+}
+
+.edu h4 {
+  color: #113a94cc;
+}
+
+.work h3,
+.edu h3 {
+  font-size: 17px;
+}
+
+.work p,
+.edu p {
+  margin: 10px;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+/********************** End Of  Right Section Styling   ******************************/
