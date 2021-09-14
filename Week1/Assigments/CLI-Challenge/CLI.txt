@@ -1,1 +1,11 @@
+Q1
+mkdir .foldername : to create hidden folder
+touch .filename : tocreate heddin file
+ls -a : to list the hidden files and folders
+**********************************************************
+Q2
+mkdir -p /First-dir/Second-dir//Third-dir
+**********************************************************
+Q3
+echo -n "some text here" >> file.txt
 
