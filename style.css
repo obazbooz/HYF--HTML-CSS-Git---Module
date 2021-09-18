@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body header h1 {
+  color: red;
+  font-size: 100px;
+  text-align: center;
+}
+
+main section h2 {
+  color: blue;
+  font-size: 50px;
+  text-align: center;
+}
+
+section ul {
+  list-style: none;
+}
+
+/* ************************************************************* */
+
+/* ************************************************************* */
+section .grid-floats {
+  background-color: rgba(0, 0, 0, 0.651);
+  margin-bottom: 100px;
+  position: relative;
+  width: 1200px;
+  padding: 20px;
+  margin: 20px auto;
+  overflow: hidden;
+  min-height: 1400px;
+}
+
+section .grid-floats .grid-item {
+  background-color: white;
+  border: 1px solid black;
+  margin: 1%;
+  padding: 10px;
+  width: 30%;
+  height: 400px;
+  float: left;
+}
+
+section .grid-floats img {
+  width: 300px;
+}
+
+section .grid-floats p {
+  width: 300px;
+  text-align: justify;
+}
+
+/* ******************************************************************** */
+section .grid-flex {
+  background-color: rgba(0, 0, 0, 0.651);
+  width: 1200px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+  /* flex: 20%; */
+}
+
+section .grid-flex .grid-item {
+  background-color: white;
+  border: 1px solid black;
+  margin: 1%;
+  padding: 10px;
+  width: 30%;
+  flex-grow: 1;
+  text-align: center;
+  transition: 0.5s;
+}
+
+section .grid-flex :hover .grid-item {
+  padding-left: 10px;
+}
+
+section .grid-flex img {
+  width: 300px;
+}
+
+section .grid-flex p {
+  width: 300px;
+  text-align: center;
+}
