@@ -1,0 +1,6 @@
+Q1- why the before and after does not work if there is now content?
+
+
+in the flexbox to make a space between elements we use space-between and if we want space before and after the element we used space-arround
+
+I got a question about the float and the "position: absulate" . when I do the float propaty the elements gonna be floating in the layout accourding to the element's perant even with the position propaty if I make the perant relative and the child absulate then I can float the elements in the layout. So what is the commenly used senario when we want to design a comlecated layout to deal wwith the flaot propaty or with the position propaty? 
